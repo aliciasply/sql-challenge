@@ -9,10 +9,12 @@ SELECT * FROM salaries;
 -- 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 SELECT * FROM employees; -- emp_no, last_name, first_name, sex
 SELECT * FROM salaries; -- salary
+
 SELECT emp.emp_no, emp.last_name, emp.first_name, emp.sex, sal.salary 
 FROM employees AS emp
 INNER JOIN salaries AS sal ON
 emp.emp_no=sal.emp_no;
+
 
 -- 2. List first name, last name, and hire date for employees who were hired in 1986.
 SELECT * FROM employees; -- first_name, last_name, hire_date
